@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<!-- Font Awesome Icons -->
+	<script src="https://kit.fontawesome.com/928c47399c.js" crossorigin="anonymous"></script>
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Alike&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+	<!-- Style Sheet -->
+	<link rel="stylesheet" type="text/css" href="Lana.css">
+	<title>About Lana Fidelis</title>
+</head>
+<style>
+  .banner-about{
+    background-color: var(--primary) ;
+    height: 180px;
+}
+.banner-about h1{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: white;
+    padding-top: 125px;
+    
+}
+.about-section{
+    height: 100%;
+    background-color: white;
+}
+.about-section h2{
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+.about-section img{
+    border-radius: 10px;
+    margin: 30px 20px 20px 20px;
+}
+.flexpic-text{
+    display: flex; 
+    justify-content: center;  
+}
+.yelp-section{
+  display: none;
+}
+.about-section p{
+    margin:30px 20px 20px 20px;
+}
+.about-section a{
+    color: var(--primary);
+}
+.about-section .last-child{
+    padding-bottom: 50px;
+}
+.footer{
+    margin-top: 10%;
+}
+
+/*small tablet styles*/
+@media screen and (min-width: 620px){
+  .banner-about{
+    height: 200px;
+  }
+  .banner-about h1{
+    padding-top: 140px;
+  }
+  .about-section p{
+    margin: 30px 100px 20px 100px;
+  }
+}
+
+/*large tablets & laptops*/
+@media screen and (min-width: 960px){
+  .banner-about{
+    height: 60px;
+  }
+  .banner-about h1{
+    padding-top: 10px;
+  }
+  .about-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .flexpic-text{
+    display: grid;
+    grid-column-start: 1;
+    justify-items:center;
+  }
+  .about-section p{
+    margin: 30px 100px 20px 10px;
+  }
+  .yelp-section{
+    display: grid;
+    margin-top: 0px;
+    grid-gap: 5%;
+  }
+  .yelp-section a{
+    color: white;
+  }
+}
+
+
+
+</style>
+<body>
+
+<!-- desktop Nav bar -->
+   <header class="desktop-nav">
+           <a class="desktop-logo" href="index.html"><img class="desktop-logo-img" src="lanalogo.png" alt="logo"></a>
+
+        <ul class="desktop-menu">
+                <li><a  href="index.html">Home</a></li>
+                <li><a  href="About.html">About Me</a></li>
+                <li><a  href="services.html">Services</a></li>
+                <li><a  href="testimonials.html">Testimonials</a></li>
+                <li><a  href="contact.html">Contact Me</a></li>
+        </ul>
+
+        <div class="desktop-call">
+            <p>Call Today!</p>
+            <span><a href="tel:808-321-8182">(808) 321-8182</a></span>
+        </div>
+   </header>
+
+<!-- mobile Nav Bar -->
+
+	<header class="topnav">
+       <a class="alogo" href="index.html"><img class="logo" src="lanalogo.png" alt="logo"></a>
+
+       <div>
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+
+        
+    
+        <ul class="menu">
+                <li><a  href="index.html">Home</a></li>
+                <li><a  href="About.html">About Me</a></li>
+                <li><a  href="services.html">Services</a></li>
+                <li><a  href="testimonials.html">Testimonials</a></li>
+                <li><a  href="contact.html">Contact Me</a></li>
+        </ul>
+       </div>
+
+   </header>
+
+   <div class="banner-about">
+       <h1 class="about-header">About Me</h1>
+   </div>
+
+
+
+
+
+
+  <div class="about-section">
+      <h2>Aloha, I'm Lana Fidelis</h2>
+      <div class="flexpic-text">
+          <img src="lanapic.jpg">
+
+
+          <div class="yelp-section">
+      <img src="yelp.png">
+      <div class="stars">
+        <li><i class="fas fa-star"></i></li>
+        <li><i class="fas fa-star"></i></li>
+        <li><i class="fas fa-star"></i></li>
+        <li><i class="fas fa-star"></i></li>
+        <li><i class="fas fa-star"></i></li>
+      </div>
+      <span class="five-stars">5 Stars on Yelp!</span>
+      <a href="https://www.yelp.com/biz/lanas-cleaning-kailua-3">Leave a Review</a>
+    </div>
+
+      </div>
+      <div class="p-tag-wrapper">
+        <p>I have been a Aromatherapy House Cleaning Professional for nearly 20 years, and I am loving every minute.</p>
+
+      <p>After getting married on the Island Of Oahu I couldnt resist the beauty and the weather, thats when my husband and I decided to relocate from Connecticut to Hawaii. I took my business to the island and now service so many amazing clients! We are currently living in Kaneohe and service the Kailua, Kaneohe, and Waimanalo areas.</p>
+
+      <p>I understand that your home is one of your most valuable possessions. I treat it that way by handling your home, your key, your belongings and your pets as carefully as if they were my own. When you invite me into your home, you can be completely confident in your decision.</p>
+      <p>
+      To see what some of my clients have to say about me please check out our <a href="testimonials.html">testimonial page.</a> I can also provide contact info for all references who have left me a testimonial.
+      </p>
+      <p class="last-child">For more information please feel free to <a href="contact.html">contact me.</a></p>
+      </div>
+      
+
+
+      
+  </div>
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="img-text-wrapper">
+    <div class="top-bar">
+        <img src="lanalogo.png">
+      </div>
+        
+        <div class="middle-top">
+          <h5>We clean, you relax. It's that simple.</h5>
+            <span><a href="tel:808-321-8182">(808) 321-8182</a></span>
+      </div>
+  </div>
+    	
+
+    	<div class="middle">
+    		<div class="column1">
+    			<span>Links</span>
+    			<ul>
+    				<li><a href="About.html">About Me</a></li>
+    				<li><a href="services.html">Services</a></li>
+    				<li><a href="testimonials.html">Testimonials</a></li>
+    				<li><a href="contact.html">Contact Me</a></li>
+    			</ul>
+    		</div>
+    		<div class="column2">
+    			<span>Connect</span>
+    			<ul>
+    				<li><a href="https://www.facebook.com/pages/category/Cleaning-Service/Lanas-Cleaning-Service-494135497288529/">Facebook</a></li>
+    				<li><a href="https://www.yelp.com/biz/lanas-cleaning-kailua-3">Yelp</a></li>
+    			</ul>
+    		</div>
+
+    	</div>
+
+
+    	<div class="bottom-bar">
+    		<p>Copyright © 2020 Lana's Cleaning. All rights reserved | Built by biancascode.com</p>
+    	</div>
+    </footer>
+		
+
+
+
+<script type="text/javascript" src="Lana.js"></script>
+
+
+</body>
+</html>

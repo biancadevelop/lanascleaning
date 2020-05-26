@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <!-- Jquery JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="Lana.js"></script>
+
+	<!-- Font Awesome Icons -->
+	<script src="https://kit.fontawesome.com/928c47399c.js" crossorigin="anonymous"></script>
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Alike&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+	<!-- Style Sheet -->
+	<link rel="stylesheet" type="text/css" href="Lana.css">
+    
+	<title>Contact Me</title>
+</head>
+<style>
+body{
+    background-color: whitesmoke;
+}
+.banner-contact{
+    background-color: var(--primary) ;
+    height: 180px;
+}
+.banner-contact h1{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: white;
+    padding-top: 125px;
+}
+.contact-text{
+    margin-top: 10%;
+    text-align: center;
+}
+.contact-text h1{
+    font-size: 1.4em;
+    line-height: 2;
+}
+.contact-text a{
+    color: #38b6ff;
+    font-size: 1em;
+}
+.hide-text{
+  display: none;
+}
+.contact-form{
+    text-align: center;
+    background-color: white;
+    margin: 30px 20px;
+    padding:30px;
+}
+
+#contact-form{
+   /* display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;*/
+}
+input, textarea{
+    width: 100%;
+    font-size: 1.3em;
+    font-family: sans-serif;
+    border: none;
+    border-bottom: 1px solid var(--primary);
+    outline: none;
+    margin-top: 40px;
+    padding-bottom: 10px;
+}
+.name{
+
+}
+.email{
+
+}
+.phone{
+
+}
+.message{
+    height: 100px;
+
+}
+.submit{
+    background-color: #38b6ff;
+    color: white;
+    border-radius: 3px;
+    padding: 10px;
+}
+footer{
+  margin-top: 10%;
+}
+
+/*small tablet styles*/
+@media screen and (min-width: 620px){
+  .banner-contact{
+    height: 200px;
+  }
+  .banner-contact h1{
+    padding-top: 140px;
+  }
+  .contact-form{
+    margin: 50px 50px;
+  }
+}
+
+/*large tablets & laptops*/
+@media screen and (min-width: 960px){
+  .banner-contact{
+    height: 60px;
+  }
+  .banner-contact h1{
+    padding-top: 10px;
+  }
+  .contact-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: aliceblue;
+  }
+  .hide-text{
+    padding: 50px 30px 0px 50px;
+    display: block;
+    line-height: 35px;
+  }
+  .contact-form{
+    grid-column-start: 2;
+    margin: 50px 60px;
+  }
+}
+
+/*Desktop styles*/
+@media screen and (min-width: 1200px){
+  .contact-form{
+    margin: 50px 100px;
+  }
+}
+
+</style>
+<body>
+
+<!-- desktop Nav bar -->
+   <header class="desktop-nav">
+           <a class="desktop-logo" href="index.html"><img class="desktop-logo-img" src="lanalogo.png" alt="logo"></a>
+
+        <ul class="desktop-menu">
+                <li><a  href="index.html">Home</a></li>
+                <li><a  href="About.html">About Me</a></li>
+                <li><a  href="services.html">Services</a></li>
+                <li><a  href="testimonials.html">Testimonials</a></li>
+                <li><a  href="contact.html">Contact Me</a></li>
+        </ul>
+
+        <div class="desktop-call">
+            <p>Call Today!</p>
+            <span><a href="tel:808-321-8182">(808) 321-8182</a></span>
+        </div>
+   </header>
+
+<!-- mobile Nav Bar -->
+
+	<header class="topnav">
+      <a class="alogo" href="index.html"><img class="logo" src="lanalogo.png" alt="logo"></a>
+
+       <div>
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+
+        
+    
+        <ul class="menu">
+                <li><a  href="index.html">Home</a></li>
+                <li><a  href="About.html">About Me</a></li>
+                <li><a  href="services.html">Services</a></li>
+                <li><a  href="testimonials.html">Testimonials</a></li>
+                <li><a  href="contact.html">Contact Me</a></li>
+        </ul>
+       </div>
+
+   </header>
+
+
+    <div class="banner-contact">
+       <h1 class="about-contact">Contact Me</h1>
+   </div>
+
+<div class="contact-wrapper">
+  <div class="contact-text">
+       <h1>For A Free Estimate Please Call<br><a href="tel:808-321-8182">(808) 321-8182</a><br>Or<br>Fill Out Contact Form</h1>
+
+<div class="hide-text">
+  <p>With Lanas Cleaning, your home will be treated and cared for the way you expect and more.</p>
+     <p>Don't hesitate! Spots fill up quickly.</p>
+</div>
+       
+   </div>
+
+
+
+
+   <div class="contact-form">
+
+        <h1>Get In Touch!</h1>
+
+       <form id="contact-form" method="POST" action="https://formspree.io/bdacosta3@yahoo.com">
+
+        <input type="text" name="name" class="name" placeholder="Your Name" required>
+
+        <input type="email" name="email" class="email" placeholder="Your Email" required> 
+
+        <input type="tel" name="phone" class="phone" placeholder="Phone Number" required>
+
+        <textarea name="message" class="message" placeholder="Message" required=""></textarea>
+
+        <input type="submit" class="submit" value="submit">
+
+       </form>
+
+   </div>
+</div>
+   
+
+
+
+
+
+<footer class="footer">
+    	<div class="img-text-wrapper">
+    <div class="top-bar">
+        <img src="lanalogo.png">
+      </div>
+        
+        <div class="middle-top">
+          <h5>We clean, you relax. It's that simple.</h5>
+            <span><a href="tel:808-321-8182">(808) 321-8182</a></span>
+      </div>
+  </div>
+
+    	<div class="middle">
+    		<div class="column1">
+    			<span>Links</span>
+    			<ul>
+    				<li><a href="About.html">About Me</a></li>
+    				<li><a href="services.html">Services</a></li>
+    				<li><a href="testimonials.html">Testimonials</a></li>
+    				<li><a href="contact.html">Contact Me</a></li>
+    			</ul>
+    		</div>
+    		<div class="column2">
+    			<span>Connect</span>
+    			<ul>
+    				<li><a href="https://www.facebook.com/pages/category/Cleaning-Service/Lanas-Cleaning-Service-494135497288529/">Facebook</a></li>
+    				<li><a href="https://www.yelp.com/biz/lanas-cleaning-kailua-3">Yelp</a></li>
+    			</ul>
+    		</div>
+
+    	</div>
+
+
+    	<div class="bottom-bar">
+    		<p>Copyright © 2020 Lana's Cleaning. All rights reserved | Built by biancascode.com</p>
+    	</div>
+    </footer>
+
+</body>
+</html>
